@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'tasklist'),
 
     /*
     |--------------------------------------------------------------------------
@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        tasklist\Providers\AppServiceProvider::class,
+        tasklist\Providers\AuthServiceProvider::class,
+        // tasklist\Providers\BroadcastServiceProvider::class,
+        tasklist\Providers\EventServiceProvider::class,
+        tasklist\Providers\RouteServiceProvider::class,
 
     ],
 

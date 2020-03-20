@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace tasklist;
 
 use Illuminate\Database\Eloquent\Model;
 
