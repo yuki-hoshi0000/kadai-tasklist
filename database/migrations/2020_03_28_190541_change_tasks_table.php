@@ -26,7 +26,7 @@ class ChangeTasksTable extends Migration
     public function down()
     {
         Schema::table('tasks', function (Blueprint $table) {
-            $table->string('path',191)->change();
+            $table->string('status',191)->change();
         });
     }
 }
