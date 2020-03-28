@@ -13,10 +13,8 @@ class AddTitleToTasksTable extends Migration
      */
     public function up()
     {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('content');    // content カラム追加
-            $table->timestamps();
+        Schema::table('tasks', function (Blueprint $table) {
+            $table->string('status');
         });
     }
 
@@ -28,7 +26,7 @@ class AddTitleToTasksTable extends Migration
     public function down()
     {
         Schema::table('tasks', function (Blueprint $table) {
-        Schema::dropIfExists('tasks');
+            $table->dropColumn('status');
         });
     }
 }

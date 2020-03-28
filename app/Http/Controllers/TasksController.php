@@ -15,7 +15,7 @@ class TasksController extends Controller
     public function index()
     {
         $tasks = Task::orderBy('id', 'desc')->paginate(25);
-
+        $tasks->setPath(''); //追加
         return view('tasks.index', [
             'tasks' => $tasks,
         ]);
